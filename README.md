@@ -2,7 +2,7 @@
 
 ## Summary
 - A fun art project made one rainy day in London
-- Pulls data from two APIs, a random word and a random color, to create an interesting outcome to say the very least.
+- Pulls data from two APIs, a random word and a random color (name + hexcode), to create an interesting outcome to say the very least.
 
 ## Technology
 - [Color Names API](https://github.com/meodai/color-names)
