@@ -12,7 +12,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: -webkit-fill-available;
   height: 100vh;
   transition: background 0.425s;
 }
