@@ -15,6 +15,7 @@ function wordGenerator() {
       const generatedWord = capitalizeFirstLetter(data[0]);
       randomWord.innerHTML = `${generatedWord}`;
     })
+    .catch(randomWord.innerHTML = `404`);
 }
 
 function capitalizeFirstLetter(string) {
@@ -44,12 +45,12 @@ function colorGenerator() {
       const updateColorName = colorName.replace(/(['])\b/, "’")
       generatedColor.style.backgroundColor = `${roygbivValue}`;
       generateColorName.innerText = `${updateColorName}`;
-    
-    const hspColorModel = Math.sqrt(0.299 * (roy * roy) + 0.587 * (g * g) + 0.114 * (biv * biv));
-    if (hspColorModel > 127.5) {
-      generatedCopy.style.color = `#090806`;
-    } else {
-      generatedCopy.style.color = `#F2F1EC`;
-    }
-  });
+      const hspColorModel = Math.sqrt(0.299 * (roy * roy) + 0.587 * (g * g) + 0.114 * (biv * biv));
+      if (hspColorModel > 127.5) {
+        generatedCopy.style.color = `#090806`;
+      } else {
+        generatedCopy.style.color = `#F2F1EC`;
+      }
+    })
+    .catch(generateColorName.innerHTML = `404`);
 }
