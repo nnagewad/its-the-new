@@ -16,7 +16,7 @@ function wordGenerator() {
       randomWord.innerHTML = `${generatedWord}`;
     })
     .catch(error => {
-      randomWord.innerHTML = `404`;
+      randomWord.innerHTML = `404 Error`;
       console.log("Something Borked:", error);
     });
 }
@@ -56,8 +56,9 @@ function colorGenerator() {
       }
     })
     .catch(error => {
-      generateColorName.innerHTML = `404`;
+      generateColorName.innerHTML = `404 Error`;
       generatedCopy.style.color = `#F2F1EC`;
+      generatedColor.style.backgroundColor = `#090806`;
       console.log("Something Borked:", error);
     });
 }
