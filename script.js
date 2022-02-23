@@ -15,7 +15,10 @@ function wordGenerator() {
       const generatedWord = capitalizeFirstLetter(data[0]);
       randomWord.innerHTML = `${generatedWord}`;
     })
-    .catch(randomWord.innerHTML = `404`);
+    .catch(error => {
+      randomWord.innerHTML = `404`;
+      console.log("Something Borked:", error);
+    });
 }
 
 function capitalizeFirstLetter(string) {
@@ -52,5 +55,9 @@ function colorGenerator() {
         generatedCopy.style.color = `#F2F1EC`;
       }
     })
-    .catch(generateColorName.innerHTML = `404`);
+    .catch(error => {
+      generateColorName.innerHTML = `404`;
+      generatedCopy.style.color = `#F2F1EC`;
+      console.log("Something Borked:", error);
+    });
 }
