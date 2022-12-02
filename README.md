@@ -7,7 +7,7 @@
 ## Technology
 ### API
 - [Color Names API](https://github.com/meodai/color-names)
-- [Random Word API](https://random-word-api.herokuapp.com/home)
+- [Random Word API](https://github.com/mcnaveen/Random-Words-API)
 ### Font
 - [Inter - Bold 700](https://fonts.google.com/share?selection.family=Inter:wght@700)
 
