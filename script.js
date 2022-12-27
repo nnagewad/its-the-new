@@ -9,7 +9,7 @@ function combo() {
 function wordGenerator() {
   const randomWord = document.getElementById("randomWord");
   
-  fetch("https://random-words-api.vercel.app/word")
+  fetch("https://random-word-snowy.vercel.app/word")
     .then(response => response.json())
     .then(data => {
       randomWord.innerHTML = `${data[0].word}`;
