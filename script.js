@@ -9,10 +9,11 @@ function combo() {
 function wordGenerator() {
   const randomWord = document.getElementById("randomWord");
   
-  fetch("https://random-word-snowy.vercel.app/word")
+  fetch("https://random-word-api.herokuapp.com/word/")
     .then(response => response.json())
     .then(data => {
-      randomWord.innerHTML = `${data[0].word}`;
+      const generatedWord = capitalizeFirstLetter(data[0]);
+      randomWord.innerHTML = `${generatedWord}`;
     })
     .catch(error => {
       randomWord.innerHTML = `404 Error`;
